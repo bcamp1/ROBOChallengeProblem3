@@ -1,4 +1,4 @@
-#VRML_SIM R2023b utf8
+#VRML_SIM R2025a utf8
 
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
@@ -10,8 +10,8 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/project
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.26713807652255095 -0.2647885265813807 0.9265658553296108 4.917047940264842
-  position -2.3319787719980587 5.4651245208183825 3.294650665944135
+  orientation -0.2588295980576016 -0.40281285485935064 0.8779231419261028 5.359618373779716
+  position -4.636857560742486 3.878463695145188 2.99439170546125
 }
 TexturedBackground {
 }
@@ -27,13 +27,27 @@ Blackboard {
   rotation 0 0 1 3.14159
 }
 DEF panda Panda {
+  hidden translation_1 -2.5609766867093486e-06 -8.429475192666368e-08 -0.00026384593821818236
+  hidden rotation_1 -0.032930974968641676 0.999457628355726 3.0268800797390905e-06 5.127914706526969e-05
+  hidden position_1_0 -4.146271684535927e-05
+  hidden rotation_2 0 0 -1 4.146272134164273e-05
+  hidden position_2_0 2.540753398438346e-05
+  hidden rotation_3 -0.9999999998386142 1.2703771142351824e-05 1.2703766990824924e-05 1.5707960001613857
+  hidden position_3_0 4.117345710262571e-05
+  hidden rotation_4 0.9999999995761865 -2.058673527313516e-05 2.0586728545496232e-05 1.5707960004238135
+  hidden position_4_0 -1.7708187116956622
+  hidden rotation_5 0.5661026617362264 0.5828926630787786 -0.5828927171479235 2.1113477227237403
+  hidden position_5_0 -1.5999829611896843
+  hidden rotation_6 -0.9999999999274196 8.519407941731364e-06 8.519405157437074e-06 1.5707960000725802
+  hidden position_6_0 1.5999983065285324
+  hidden rotation_7 0.566110881301349 -0.5828887939115739 0.5828886034265216 2.1113359498454174
+  hidden position_7_0 0.7899998675390068
+  hidden rotation_8 0.8614191337569509 -0.35913587978401734 0.3591357624202634 1.7194198963439282
   translation 0 0 0.21
-  controller "panda_robo_5000"
+  controller "panda_controller"
   endEffectorSlot [
     DEF pen Pen {
       leadSize 0.02
-    }
-    DEF GRIPPER PandaHand {
     }
   ]
 }
